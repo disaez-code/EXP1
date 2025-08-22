@@ -12,20 +12,20 @@ print(" ")
 print(" ")
 print("¡Buen dia!, digame...")
 
-
+# productos y cantidades
 churrascos = int(input("¿Cuantos churrascos va a querer?: "))
 completos = int(input("Tambien tenemos completos: "))
 vegetarianos = int(input("¿Va a querer algun vegetariano?: "))
 barros_luco = int(input("¿Y va a querer algun barros luco?: "))
 
-
+# precio de productos
 subtotal = (churrascos * 1500) + (completos * 1000) + (vegetarianos * 2000) + (barros_luco * 3000)
 
-
+# impuesto
 iva = subtotal * 0.19
 total_con_iva = subtotal + iva
 
-
+# codigo de descuento
 codigo = input("¿Tiene código de descuento? (s/n): ")
 
 if codigo == "s" or codigo == "S":
